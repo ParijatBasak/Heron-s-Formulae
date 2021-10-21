@@ -1,0 +1,25 @@
+print ("Calculate the area of the triangle using the Heron's formulae")
+
+import math
+
+opinion = 'y'
+while (opinion == 'y'):
+    a = float(input("Enter length of first side: "))
+    b = float(input("Enter length of second side: "))
+    c = float(input("Enter length of third side: "))
+        
+    s = (a + b + c)/2
+        
+    area = math.sqrt(s*(s-a)*(s-b)*(s-c))
+        
+    print (f"The area is: {area}")
+    
+    opinion = input("Wanna try again? (y/n): ")
+
+    if opinion == 'y':
+        continue
+        
+    else:
+        break
+        
+print ("Thank You!")
